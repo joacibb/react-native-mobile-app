@@ -1,0 +1,31 @@
+{
+  "name": "zavecom-app",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build": "babel src -d dist",
+    "dev": "nodemon src --exec babel-node",
+    "start": "node dist"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.21.4",
+    "@expo/webpack-config": "^18.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.2.3",
+    "nodemon": "^2.0.22",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4"
+  },
+  "private": true
+}
