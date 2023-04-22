@@ -21,7 +21,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE {{api}}/1
+DELETE {{api}}/16
 
 ###
 PUT {{api}}/10
