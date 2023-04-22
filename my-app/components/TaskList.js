@@ -22,7 +22,7 @@ const TasksList = ({ navigation }) => {
   const onRefresh = React.useCallback(async () => {
     setRefreshing(true);
     // wait(2000).then(() => setRefreshing(false));
-    await getUsers();
+    getUsers();
     setRefreshing(false);
   }, []);
 
@@ -37,7 +37,7 @@ const TasksList = ({ navigation }) => {
         onPress: async () => {
           try {
             deleteTask(id);
-            await getUsers();
+            getUsers();
           } catch (error) {
             console.log(error);
           }
